@@ -18,21 +18,21 @@ class Main():
         self.c = '\033[36m'
         self.w = '\033[37m'
         self.rr = '\033[39m'
-        self.cls()
+        os.system('clear')
         self.warn()
         time.sleep(2)
-        self.cls()
+        os.system('clear')
         self.banner()
         self.options()
         while self.gg == True:
             print()
             choose = input(str('             Choose Number:  '))
             if (choose == '1'):
-                self.cls()
+                os.system('clear')
                 self.banner()
                 self.rs()
             elif (choose == '2'):
-                self.cls()
+                os.system('clear')
                 self.banner()
                 self.zp()
             
@@ -107,7 +107,7 @@ class Main():
             print('')
             choose = input(str('            Choose Number:  '))
             if (choose == '1'):
-               self.clear()
+               os.system('clear')
                self.banner() 
                os.system('sudo git clone https://github.com/threat9/routersploit.git:/home/seraph/Tools .')           
                os.system('cd routersploit && sudo python3 -m pip install -r requirements.txt')
@@ -117,7 +117,7 @@ class Main():
             elif (choose == '3'):
                urllib.request.urlopen('https://github.com/threat9/routersploit')
             elif (choose == '99'):
-               self.cls()
+               os.system('clear')
                self.banner()
                self.options()
        
@@ -127,7 +127,7 @@ class Main():
             print('')
             choose = input(str('            Choose Number:  '))
             if (choose == '1'):
-               self.clear()
+               os.system('clear')
                self.start_logo() 
                os.system('sudo git clone https://github.com/threat9/routersploit.git://Tools')           
                os.system('cd routersploit && sudo python3 -m pip install -r requirements.txt')
@@ -137,7 +137,7 @@ class Main():
             elif (choose == '3'):
                os.system('cd Tools && cd routersploit && sudo python3 rsf.py')
             elif (choose == '99'):
-               self.cls()
+               os.system('clear')
                self.banner()
                self.options()
 
